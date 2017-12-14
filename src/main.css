@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    max-width: 640px;
+    /*margin: 0 auto;*/
+    /*overflow-x: hidden;*/
+}
+/*顶部导航*/
+#header{
+    height: 100px;
+    width:100%;
+    background-color:rgba(255,200,70,0.93);
+}
+.location{
+    height: 50px;
+    width:100%;
+    position: relative;
+}
+.location p{
+    position: absolute;
+    left: 18px;
+    bottom: 5px;
+}
+
+/*顶部导航-搜索框*/
+.search{
+    height: 50px;
+    width: 100%;
+}
+.search_icon{
+    height:33px;
+    width:95%;
+    margin-left:2.5%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+.search img{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.search input{
+    height: 30px;
+    width: 88%;
+    border: none;
+    border-radius: 3px;
+    margin-right: 2.5%;
+    margin-top: 1.5px;
+}
+/*顶部导航-搜索框*/
+/*顶部导航*/
+
+/*内容*/
+#concent{
+    width: 100%;
+}
+/*内容-轮播*/
+#myCarousel{
+    width: 95%;
+    left: 2.5%;
+    margin-top: 15px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+/*内容-轮播*/
+
+/*内容-菜单*/
+#list{
+    width: 100%;
+    height: 200px;
+}
+.list_1{
+    list-style-type: none;
+    width:100%;
+}
+.list_2{
+    list-style-type: none;
+    width:100%;
+}
+.list_1 li,.list_2 li{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width:20%;
+}
+.list_1 li img ,.list_2 li img{
+    height: 60px;
+    width: 60px;
+}
+.list_1 li p,.list_2 li p{
+    margin-top: 5px;
+}
+.list_1 li a,.list_2 li a{
+    text-decoration: none;
+    color: #000;
+}
+/*内容-菜单*/
+
+/*内容-优惠专区*/
+h2{
+    margin-left: 20px;
+}
+.discount{
+    /*width: 100%;*/
+    /*height:450px;*/
+}
+.discount_img1{
+    width:95%;
+ margin-left: 2.5%;
+}
+.discount_img1 li{
+    width:50%;
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+.discount_img1 li img{
+    width: 100%;
+    /*height: 100%;*/
+}
+.discount_img2 li{
+    width:25%;
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+.discount_img2 li img{
+    width: 100%;
+    height: 100%;
+}
+/*内容-优惠专区*/
+
+/*内容-为您优选*/
+.great{
+    width:100%;
+    height: 150px;
+}
+.great_img1 li{
+    width:50%;
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+.great_img1 li img{
+    width: 90%;
+    height:90%;
+}
+/*内容-为您优选*/
+
+/*底部菜单*/
+#bottom-bar{
+    background-color: #FFFFFF;
+}
+#bootom-bar ul{
+    width:100%;
+}
+#bottom-bar ul li{
+    list-style-type: none;
+    float: left;
+    width:33%;
+    text-align: center;
+}
+#bottom-bar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/*附近商家*/
+h4{
+    text-indent:10px;
+}

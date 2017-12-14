@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!--顶部-->
+<div id="header">
+    <div class="location">
+        <p>
+        <img src="images/adress5.png" height="18" width="18"/>
+        <a></a>
+        <span><img src="images/right.png" height="15" width="15"/></span>
+        </p>
+    </div>
+    <div class="search">
+        <div class="search_icon">
+            <img src="images/search.png" height="20" width="20"/>
+         <input type="search" >
+        </div>
+    </div>
+</div>
+
+<!--内容-->
+<div id="content">
+    <!--内容-轮播图-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+        <!--指示符-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!--图片-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="../images/1_03.jpg" height="269" width="1021"/>
+            </div>
+            <div class="item">
+                <img src="../images/2_03.jpg" height="268" width="1023"/>
+            </div>
+            <div class="item">
+                <img src="../images/3_03.jpg" height="269" width="1020"/>
+            </div>
+        </div>
+    </div>
+    
+    <!--内容-菜单-->
+    <div id="list">
+        <ul class="list_1">
+            <li onclick="javascript:document.getElementById('01').click();">
+                <img src="../images/food.png" height="100" width="100"/>
+                <p><a id="01" href="####">美食</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('02').click();">
+                <img src="../images/supM.png" height="100" width="100"/>
+                <p><a id='02' href="####">美团超市</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('03').click();">
+                <img src="../images/fruit.png" height="100" width="100"/>
+                <p><a id="03" href="####">生鲜果蔬</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('04').click();">
+                <img src="../images/speci.png" height="100" width="100"/>
+                <p><a id="04" href="#">美团专送</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('05').click();">
+                <img src="../images/errands.png" height="100" width="100"/>
+                <p><a id="05" href="#">跑腿代购</a></p>
+            </li>
+        </ul>
+
+        <ul class="list_2">
+            <li onclick="javascript:document.getElementById('06').click();">
+                <img src="../images/1_22.png" height="100" width="100"/>
+                <p><a id="06" href="####">宵夜</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('07').click();">
+                <img src="../images/1_23.png" height="100" width="100"/>
+                <p><a id="07" href="####">甜点饮品</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('08').click();">
+                <img src="../images/1_24.png" height="100" width="100"/>
+                <p><a id="08" href="####">龙虾烧烤</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('09').click();">
+                <img src="../images/1_25.png" height="100" width="100"/>
+                <p><a id="09" href="#">快食简餐</a></p>
+            </li>
+            <li onclick="javascript:document.getElementById('10').click();">
+                <img src="../images/1_26.png" height="100" width="100"/>
+                <p><a id='10' href="#">送药上门</a></p>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-优惠专区-->
+    <h2>优惠专区</h2>
+    <div class="discount">
+        <ul class="discount_img1">
+            <li>
+                <img src="../images/1_32.jpg" height="125" width="200"/>
+            </li>
+            <li>
+                <img src="../images/1_34.jpg" height="125" width="200"/>
+            </li>
+        </ul>
+        <ul class="discount_img2">
+            <li>
+                <img src="../images/18_03.jpg" height="125" width="160"/>
+            </li>
+            <li>
+                <img src="../images/18_05.jpg" height="125" width="160"/>
+            </li>
+            <li>
+                <img src="../images/18_07.jpg" height="125" width="160"/>
+            </li>
+            <li>
+                <img src="../images/18_09.jpg" height="125" width="160"/>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-为您优选-->
+    <h2>为你优选</h2>
+    <div class="great">
+        <ul class="great_img1">
+            <li>
+                <img src="../images/8_16.jpg" height="138" width="200"/>
+            </li>
+            <li>
+                <img src="../images/8_18.jpg" height="138" width="200"/>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--附近商家-->
+    <div>
+        <h2>附近商家</h2>
+        <!--tab-->
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="dropdown active">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle"
+                   data-toggle="dropdown">综合排序
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                    <li><a href="#shop_zh" tabindex="-1" data-toggle="tab">综合排序</a></li>
+                    <li><a href="#drop2" tabindex="-1" data-toggle="tab">速度最快</a></li>
+                    <li><a href="#drop3" tabindex="-1" data-toggle="tab">评分最高</a></li>
+                    <li><a href="#drop4" tabindex="-1" data-toggle="tab">起送价最低</a></li>
+                    <li><a href="#drop5" tabindex="-1" data-toggle="tab">配送费最低</a></li>
+                    <li><a href="#drop6" tabindex="-1" data-toggle="tab">人均高到低</a></li>
+                    <li><a href="#drop7" tabindex="-1" data-toggle="tab">人均低到高</a></li>
+                </ul>
+            </li>
+            <li><a href="#shop_zh" data-toggle="tab">销量最高</a></li>
+            <li><a href="####" data-toggle="tab">距离最近</a></li>
+            <li><a href="####" data-toggle="tab">筛选</a></li>
+
+        </ul>
+        <!--tab-->
+        <div id="shop_zh">
+            <table>
+                <tr>
+                    <td><img src="../images/s18_31.jpg" height="85" width="125"/></td>
+                    <td>
+                        <h4>肯德基宅急送</h4><br>
+                        <p><img src="../images/jian.jpg" height="20" width="22"/>
+                            满减89-16
+                        </p>
+                        <p><img src="../images/shou.jpg" height="20" width="22"/>
+                            新用户立减6元
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../images/s18_31.jpg" height="85" width="125"/></td>
+                    <td>
+                        <h4>肯德基宅急送</h4><br>
+                        <p><img src="../images/jian.jpg" height="20" width="22"/>
+                            满减89-16
+                        </p>
+                        <p><img src="../images/shou.jpg" height="20" width="22"/>
+                            新用户立减6元
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../images/s18_31.jpg" height="85" width="125"/></td>
+                    <td>
+                        <h4>肯德基宅急送</h4><br>
+                        <p><img src="../images/jian.jpg" height="20" width="22"/>
+                            满减89-16
+                        </p>
+                        <p><img src="../images/shou.jpg" height="20" width="22"/>
+                            新用户立减6元
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+底部菜单
+<nav id="bottom-bar" class="navbar-fixed-bottom">
+    <ul>
+        <li>
+            <img src="../images/home (1).png" height="28" width="28"/>
+            <p><a>首页</a></p>
+        </li>
+        <li>
+            <img src="../images/order (1).png" height="28" width="28"/>
+            <p><a>订单</a></p>
+        </li>
+        <li>
+            <img src="../images/meituan (1).png" height="28" width="28"/>
+            <p><a>我的</a></p>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
